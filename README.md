@@ -22,6 +22,15 @@ Default output format [None]:
 ```
 
 
+## edit source
+```
+$ vi update-route53-A.json
+replace {CHANGE_DOMAIN} 
+```
+```
+$ vi update-route53.sh
+replace {CHANGE_HOSTED_ZONE_ID} 
+```
 
 ## reference 
 http://docs.aws.amazon.com/cli/latest/reference/route53/change-resource-record-sets.html
