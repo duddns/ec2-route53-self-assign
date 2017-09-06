@@ -21,7 +21,7 @@ $ sudo pip install awscli
 
 ## Config aws
 ```
-$ aws configure
+$ aws configure --profile assign-ec2-route53
 AWS Access Key ID [None]: -your-aws-key-id
 AWS Secret Access Key [None]: -your-aws-access-key
 Default region name [None]: -your-region-name
