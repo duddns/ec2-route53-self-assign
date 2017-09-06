@@ -10,4 +10,4 @@ INPUT_JSON=$( cat ./update-route53-A.json | sed "s/127\.0\.0\.1/$IP/" )
 # We want to use the string variable command so put the file contents (batch-changes file) in the following JSON
 INPUT_JSON="{ \"ChangeBatch\": $INPUT_JSON }"
 
-aws route53 change-resource-record-sets --hosted-zone-id "$HOSTED_ZONE_ID" --cli-input-json "$INPUT_JSON"
+aws route53 change-resource-record-sets --profile assign-ec2-route53 --hosted-zone-id "$HOSTED_ZONE_ID" --cli-input-json "$INPUT_JSON"
