@@ -2,7 +2,14 @@
 
 
 
-## install python and the AWS client tools
+## Create IAM user
+```
+AmazonRoute53DomainsFullAccess
+AmazonRoute53FullAccess
+```
+
+
+## Install python and the AWS client tools
 ubuntu example
 ```
 $ sudo apt-get install python-pip
@@ -12,7 +19,7 @@ $ sudo pip install awscli
 
 
 
-## aws configure
+## Config aws
 ```
 $ aws configure
 AWS Access Key ID [None]: -your-aws-key-id
@@ -22,7 +29,7 @@ Default output format [None]:
 ```
 
 
-## edit source
+## Edit source
 ```
 $ vi update-route53-A.json
 replace {CHANGE_DOMAIN} 
