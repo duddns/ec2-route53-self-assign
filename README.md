@@ -19,6 +19,14 @@ $ sudo pip install awscli
 
 
 
+## Change user
+this example use root.
+```
+sudo su - 
+```
+
+
+
 ## Config aws
 ```
 $ aws configure --profile assign-ec2-route53
