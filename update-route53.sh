@@ -1,5 +1,16 @@
 #!/bin/sh
 
+### BEGIN INIT INFO
+# Provides:      update-route53
+# Required-Start:    $local_fs $remote_fs $network $syslog $named
+# Required-Stop:     $local_fs $remote_fs $network $syslog $named
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the update-route53
+# Description:       starts update-route53 using start-stop-daemon
+### END INIT INFO
+
+
 HOSTED_ZONE_ID="{CHANGE_HOSTED_ZONE_ID}"
 
 IP=$( curl http://instance-data/latest/meta-data/public-ipv4 )
