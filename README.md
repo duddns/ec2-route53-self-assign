@@ -1,6 +1,11 @@
 # ec2-route53-self-assign
 
 
+## example usage
+relate https://github.com/tosslab/aws_instance_scheduler
+* ec2 start 시 변경된 IP 를 Route53 에 자동으로 연결
+
+
 
 ## Create IAM user
 ```
