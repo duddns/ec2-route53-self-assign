@@ -49,5 +49,5 @@ $ sudo update-rc.d update-route53 defaults
 
 
 
-## reference 
+## References
 http://docs.aws.amazon.com/cli/latest/reference/route53/change-resource-record-sets.html
