@@ -46,7 +46,7 @@ replace {CHANGE_HOSTED_ZONE_ID}
 $ sudo ln -s update-route53.sh /etc/init.d/update-route53
 $ sudo update-rc.d update-route53 defaults
 ```
-
+* 이 경우 서비스 실행하는 user 계정에 aws configure 를 진행해야 합니다.
 
 
 ## References
