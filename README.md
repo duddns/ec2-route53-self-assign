@@ -39,5 +39,15 @@ $ vi update-route53.sh
 replace {CHANGE_HOSTED_ZONE_ID} 
 ```
 
+
+
+## Adding a service
+```
+$ sudo ln -s update-route53.sh /etc/init.d/update-route53
+$ sudo update-rc.d update-route53 defaults
+```
+
+
+
 ## reference 
 http://docs.aws.amazon.com/cli/latest/reference/route53/change-resource-record-sets.html
