@@ -53,10 +53,15 @@ replace {CHANGE_HOSTED_ZONE_ID}
 ```
 
 
+## Make it excutable
+```
+$ chmod +x update-route53.sh
+```
+
 
 ## Adding a service
 ```
-$ sudo ln -s update-route53.sh /etc/init.d/update-route53
+$ sudo ln -s /root/update-route53.sh /etc/init.d/update-route53
 $ sudo update-rc.d update-route53 defaults
 ```
 
